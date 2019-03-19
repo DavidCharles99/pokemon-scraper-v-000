@@ -1,5 +1,5 @@
 class Pokemon
-attr_accessor 
+attr_accessor :id, :name, :type, :db
   def initialize
   end
 
