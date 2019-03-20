@@ -18,4 +18,5 @@ attr_accessor :id, :name, :type, :db
     poke_out = Pokemon.new(id:id,name:array[1],type:array[2],db:db,)
     return poke_out
   end
+
 end
