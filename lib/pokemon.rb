@@ -16,7 +16,7 @@ attr_accessor :id, :name, :type, :db
   def self.find(id, db)
     array = db.execute("select * from pokemon where pokemon.id = ?;",id).flatten
     new_pokemon = Pokemon.new(id:id,name:array[1],type:array[2],db:db,)
-     new_pokemon
+    new_pokemon
   end
 
 
