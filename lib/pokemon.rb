@@ -14,6 +14,6 @@ attr_accessor :id, :name, :type, :db
   end
 
   def self.find(id, db)
-    
+
   end
 end
