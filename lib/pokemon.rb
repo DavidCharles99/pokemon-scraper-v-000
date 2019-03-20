@@ -14,8 +14,8 @@ attr_accessor :id, :name, :type, :db
   end
 
   def self.find(id, db)
-array = db.execute("select * from pokemon where pokemon.id = ?;",id).flatten
-poke_out = Pokemon.new(id:id,name:array[1],type:array[2],db:db,)
-return poke_out
-end
+    array = db.execute("select * from pokemon where pokemon.id = ?;",id).flatten
+    poke_out = Pokemon.new(id:id,name:array[1],type:array[2],db:db,)
+    return poke_out
+  end
 end
