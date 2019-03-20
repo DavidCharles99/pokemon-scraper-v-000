@@ -7,4 +7,8 @@ attr_accessor :id, :name, :type, :db
     @db = db
   end
 
+  def save(name, type, db)
+    
+  end
+
 end
