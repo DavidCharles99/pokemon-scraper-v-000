@@ -15,11 +15,9 @@ attr_accessor :id, :name, :type, :db
 
   def self.find(id, db)
     array = db.execute("select * from pokemon where pokemon.id = ?;",id).flatten
-    poke_out = Pokemon.new(id:id,name:array[1],type:array[2],db:db,)
-    return poke_out
+    new_pokemon = Pokemon.new(id:id,name:array[1],type:array[2],db:db,)
+     new_pokemon
   end
 
-  def alter_hp(hp,db)
-    db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", hp, self.id)
-  end
+
 end
