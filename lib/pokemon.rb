@@ -20,7 +20,7 @@ attr_accessor :id, :name, :type, :db
     type = pokemon[2]
     hp = pokemon[3]
 
-    new_pokemon = Pokemon.new(id: id, name: name, hp: hp, type:, type, db: db)
+    new_pokemon = Pokemon.new(id: id, name: name, hp: hp, type: type, db: db)
 
   end
 end
